@@ -197,12 +197,12 @@ aAdd audio
   }
 
   .skills {
-    background-image: url('../img/DCIM/STRQ0607-media.jpg');
+    background-image: url('../img/DCIM/background-acara-mobile.JPG');
     background-size: cover;
   }
 
   .facts {
-    background-image: linear-gradient(180deg,rgba(142, 142, 142, 0.25) 0%,rgba(142, 142, 142, 0.25) 100%), url('../img/DCIM/STRQ0633-media.jpg');
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25) 0%,rgba(0, 0, 0, 0.25) 100%), url('../img/DCIM/background-happiness-day-mobile.JPG');
     background-size: cover;
   }
 
@@ -558,7 +558,7 @@ section {
 # Facts
 --------------------------------------------------------------*/
 .facts {
-  background-image: linear-gradient(180deg,rgba(142, 142, 142, 0.25) 0%,rgba(142, 142, 142, 0.25) 100%), url('../img/DCIM/STRQ0633.jpg');
+  background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25) 0%,rgba(0, 0, 0, 0.25) 100%), url('../img/DCIM/background-happiness-day.JPG');
   background-size: cover;
 }
 .facts .count-box {
@@ -688,12 +688,12 @@ section {
   }
 
   .skills {
-    background-image: url('../img/DCIM/STRQ0607-media.jpg');
+    background-image: url('../img/DCIM/background-acara-mobile.JPG');
     background-size: cover;
   }
 
   .facts {
-    background-image: linear-gradient(180deg,rgba(142, 142, 142, 0.25) 0%,rgba(142, 142, 142, 0.25) 100%), url('../img/DCIM/STRQ0633-media.jpg');
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25) 0%,rgba(0, 0, 0, 0.25) 100%), url('../img/DCIM/background-happiness-day-mobile.JPG');
     background-size: cover;
   }
 }
@@ -702,7 +702,7 @@ section {
 # Skills
 --------------------------------------------------------------*/
 .skills {
-  background-image: url('../img/DCIM/STRQ0607.jpg');
+  background-image: url('../img/DCIM/background-acara.JPG');
   background-size: cover;
   border-top-style: double;
   border-top-width: 15px;
@@ -751,13 +751,13 @@ section {
 }
 
 .skills .akad {
-  background-image: linear-gradient(180deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 100%), url('../img/DCIM/STRQ0862.jpg');
+  background-image: linear-gradient(180deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 100%), url('../img/DCIM/background-akad.JPG');
   background-position: top center;
   background-size: cover;
 }
 
 .skills .resepsi {
-  background-image: linear-gradient(180deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 100%), url('../img/DCIM/STRQ0752.jpg');
+  background-image: linear-gradient(180deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 100%), url('../img/DCIM/background-tasyakuran.JPG');
   background-position: top center;
   background-size: cover;
 }
@@ -1267,11 +1267,11 @@ section {
     width: 80%;
   }
   .skills {
-    background-image: url('../img/DCIM/STRQ0607.jpg');
+    background-image: url('../img/DCIM/background-acara.JPG');
     background-size: cover;
   }
   .facts {
-    background-image: linear-gradient(180deg,rgba(142, 142, 142, 0.25) 0%,rgba(142, 142, 142, 0.25) 100%), url('../img/DCIM/STRQ0633.jpg');
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25) 0%,rgba(0, 0, 0, 0.25) 100%), url('../img/DCIM/background-happiness-day.JPG');
     background-size: cover;
   }
 }
@@ -1392,7 +1392,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25) 0%,rgba(0, 0, 0, 0.25) 100%), url('../img/DCIM/STRQ0715.jpg');
+  background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25) 0%,rgba(0, 0, 0, 0.25) 100%), url('../img/bg-footer.png');
   background-size: cover;
   color: #fff;
   font-size: 14px;
@@ -1443,7 +1443,7 @@ section {
 }
 
 .modal-background {
-  background-image: url('../img/DCIM/STRQ0103.jpg');
+  background-image: url('../img/DCIM/cover-image.JPG');
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
@@ -1486,7 +1486,7 @@ section {
 @media (max-width: 992px) {
   .modal-background {
     text-align: center;
-    background-image: url('../img/DCIM/STRQ0103-mobile.jpg');
+    background-image: url('../img/DCIM/cover-image-mobile.JPG');
   }
   .modal-background h1 {
     font-size: 40px;
@@ -1512,7 +1512,7 @@ section {
   }
 
   .skills {
-    background-image: url('../img/DCIM/STRQ0607-media.jpg');
+    background-image: url('../img/DCIM/background-acara-mobile.JPG');
     background-size: cover;
   }
 
@@ -1537,7 +1537,7 @@ section {
   }
 
   .facts {
-    background-image: linear-gradient(180deg,rgba(142, 142, 142, 0.25) 0%,rgba(142, 142, 142, 0.25) 100%), url('../img/DCIM/STRQ0633-media.jpg');
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25) 0%,rgba(0, 0, 0, 0.25) 100%), url('../img/DCIM/background-happiness-day-mobile.JPG');
     background-size: cover;
   }
 
@@ -1588,7 +1588,7 @@ section {
   }
 
   .skills {
-    background-image: url('../img/DCIM/STRQ0607-media.jpg');
+    background-image: url('../img/DCIM/background-acara-mobile.JPG');
     background-size: cover;
   }
 
@@ -1613,7 +1613,7 @@ section {
   }
 
   .facts {
-    background-image: linear-gradient(180deg,rgba(142, 142, 142, 0.25) 0%,rgba(142, 142, 142, 0.25) 100%), url('../img/DCIM/STRQ0633-media.jpg');
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25) 0%,rgba(0, 0, 0, 0.25) 100%), url('../img/DCIM/background-happiness-day-mobile.JPG');
     background-size: cover;
   }
 
