@@ -68,7 +68,7 @@
             <p id="guideline" style="font-size: 25px;"></p>
           </div>
           <div class="col-lg-12 mt-4">
-            <button type="button" id="btnOpenInvitation" class="btn btn-default pulse"  data-mdb-animation="slide-out-right" data-bs-dismiss="modal"><i class="fa-solid fa-envelope fa-beat"></i> Buka Undangan</button>
+            <button type="button" id="btnOpenInvitation" class="btn btn-default pulse"  data-mdb-animation="slide-out-right" data-bs-dismiss="modal"><i class="fa-solid fa-envelope fa-beat"></i>&nbsp; Buka Undangan</button>
           </div>
         </div>
         
@@ -184,7 +184,7 @@
                   <span class="nama-orang-tua d-flex justify-content-center" id="groomMotherName"></span>
                   <span class="nama-orang-tua d-flex justify-content-center"><strong id="groomBirthPlace"></strong></span>
                   <span class="nama-orang-tua d-flex justify-content-center">
-                    <button class="btn btn-circle btn-instagram mt-1" id="btnGroomInstagram" onclick="window.open('https://instagram.com/piinalpin','_blank')"><i class="bi bi-instagram"></i></button>
+                    <button class="btn btn-circle btn-instagram mt-1" id="btnGroomInstagram"><i class="bi bi-instagram"></i></button>
                   </span>
                 </div>
               </div>
@@ -195,7 +195,7 @@
               <div class="d-flex justify-content-center">
                 <img src="assets/img/DCIM/pengantin-wanita.JPG" class="img-fluid foto-pasangan" alt="">
               </div>
-              <h3 class="d-flex justify-content-center mt-2 nama-pasangan brideName"></h3>
+              <h3 class="d-flex justify-content-center mt-2 nama-pasangan" id="brideName"></h3>
               <span class="d-flex justify-content-center" id="brideFullName"></span>
               <hr class="mt-3" style="max-width: 60%; margin: auto;">
               <div class="row d-flex justify-content-center">
@@ -206,7 +206,7 @@
                   <span class="nama-orang-tua d-flex justify-content-center" id="brideMotherName"></span>
                   <span class="nama-orang-tua d-flex justify-content-center"><strong id="brideBirthPlace"></strong></span>
                   <span class="nama-orang-tua d-flex justify-content-center">
-                    <button class="btn btn-circle btn-instagram mt-1" id="btnBrideInstagram" onclick="window.open('https://instagram.com/arinimauluddina','_blank')"><i class="bi bi-instagram"></i></button>
+                    <button class="btn btn-circle btn-instagram mt-1" id="btnBrideInstagram"><i class="bi bi-instagram"></i></button>
                   </span>
                 </div>
               </div>
@@ -516,7 +516,7 @@
         </div>
 
         <div class="col-lg-12">
-          <form class="form-guest-book">
+          <form class="form-guest-book" style="color: white;">
             <i class="bi bi-card-heading"> <span id="countUcapan"></span></i>
             <hr>
             <div class="form-group">
@@ -603,7 +603,6 @@
   <script src="assets/vendor/slideshow/js/popper.js"></script>
   <script src="assets/vendor/slideshow/js/owl.carousel.min.js"></script>
   <script src="assets/vendor/slideshow/js/main.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&v=weekly"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
 
@@ -690,12 +689,18 @@
     $("#brideName").html(data.bride_name);
     const groomDetail = data.details.find(detail => detail.detail_type == 'GROOM');
     const brideDetail = data.details.find(detail => detail.detail_type == 'BRIDE');
+    $("#groomFullName").html(groomDetail.full_name);
+    $("#brideFullName").html(brideDetail.full_name);
+    
     $("#groomFatherName").html(groomDetail.father_name);
     $("#groomMotherName").html(groomDetail.mother_name);
     $("#groomBirthPlace").html(groomDetail.birth_place);
+    $("#btnGroomInstagram").click(() => window.open(`https://instagram.com/${groomDetail.instagram}`, '_blank'));
+    
     $("#brideFatherName").html(brideDetail.father_name);
     $("#brideMotherName").html(brideDetail.mother_name);
     $("#brideBirthPlace").html(brideDetail.birth_place);
+    $("#btnBrideInstagram").click(() => window.open(`https://instagram.com/${brideDetail.instagram}`, '_blank'));
 
     // Wedding event information
     const akad = data.event_details.find(eventDetail => eventDetail.event_type == 'AKAD');

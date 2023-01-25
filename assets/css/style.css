@@ -80,7 +80,7 @@ aAdd audio
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #596C65;
+  background: #1C82AD;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -92,7 +92,7 @@ aAdd audio
   line-height: 0;
 }
 .btn-audio:hover {
-  background: #b1b89c;
+  background: #1996cc;
   color: #fff;
 }
 .btn-audio.active {
@@ -123,7 +123,7 @@ aAdd audio
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #9AA086;
+  border: 6px solid #00337C;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -460,7 +460,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #9AA086;
+  background: #00337C;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -766,7 +766,7 @@ section {
   margin: 0;
   font-size: 45px;
   font-family: "monoline signature", sans-serif;
-  color: #7b8752 !important;
+  color: #00337C !important;
 }
 
 .skills .count-box p {
@@ -791,7 +791,7 @@ section {
 # Amplop
 --------------------------------------------------------------*/
 .amplop {
-  background: #9AA086;
+  background: #00337C;
   color: #fff;
 }
 
@@ -818,12 +818,12 @@ section {
 }
 
 .btn-confirm {
-  background-color: #596C65 !important;
+  background-color: #1C82AD !important;
   border-radius: 7.5px;
 }
 
 .btn-success {
-  border-color: #596C65 !important;
+  border-color: #1C82AD !important;
   border-radius: 50px;
 }
 
@@ -1466,7 +1466,7 @@ section {
   font-size: 50;
   font-weight: 500;
   line-height: 56px;
-  color: #9DA583!important;
+  color: #8DCBE6!important;
   font-family: "monoline signature", Sans-serif;
 }
 
@@ -1640,7 +1640,7 @@ section {
 }
 
 .pulse {
-  background-color: #9AA086!important;
+  background-color: #00337C!important;
   color: #ffffff;
   border: none;
   border-radius: 20px;
@@ -1649,63 +1649,63 @@ section {
   text-decoration: none;
   cursor: pointer;
   box-shadow: 0 0 0 rgba(103, 204, 44, 0.4);
-  /* animation: pulse 2s infinite; */
+  animation: pulse 2s infinite;
 }
 .pulse:hover {
   background-color: #3f7856fc;
   color: #ffffff;
-  box-shadow: 0 0 0 rgba(103, 204, 44, 0.4);
-  /* animation: pulse 2s linear infinite; */
+  box-shadow: 0 0 0 rgba(44, 113, 204, 0.4);
+  animation: pulse 2s linear infinite;
 }
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(103, 204, 44, 0.4);
+    -webkit-box-shadow: 0 0 0 0 rgba(44, 113, 204, 0.4);
   }
   70% {
-      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      -webkit-box-shadow: 0 0 0 10px rgba(44, 113, 204, 0);
   }
   100% {
-      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      -webkit-box-shadow: 0 0 0 0 rgba(44, 113, 204, 0);
   }
 }
 
 @keyframes pulse {
   0% {
-    -moz-box-shadow: 0 0 0 0 rgba(103, 204, 44, 0.4);
-    box-shadow: 0 0 0 0 rgba(103, 204, 44, 0.4);
+    -moz-box-shadow: 0 0 0 0 rgba(44, 113, 204, 0.4);
+    box-shadow: 0 0 0 0 rgba(44, 113, 204, 0.4);
   }
   70% {
-      -moz-box-shadow: 0 0 0 10px rgba(103, 204, 44, 0);
-      box-shadow: 0 0 0 10px rgba(103, 204, 44, 0);
+      -moz-box-shadow: 0 0 0 10px rgba(44, 113, 204, 0);
+      box-shadow: 0 0 0 10px rgba(44, 113, 204, 0);
   }
   100% {
-      -moz-box-shadow: 0 0 0 0 rgba(103, 204, 44, 0);
-      box-shadow: 0 0 0 0 rgba(103, 204, 44, 0);
+      -moz-box-shadow: 0 0 0 0 rgba(44, 113, 204, 0);
+      box-shadow: 0 0 0 0 rgba(44, 113, 204, 0);
   }
 }
 
 @-moz-keyframes pulse {
   0% {
-    -moz-box-shadow: 0 0 0 0 rgba(103, 204, 44, 0.4);
+    -moz-box-shadow: 0 0 0 0 rgba(44, 113, 204, 0.4);
   }
   70% {
-      -moz-box-shadow: 0 0 0 10px rgba(103, 204, 44, 0);
+      -moz-box-shadow: 0 0 0 10px rgba(44, 113, 204, 0);
   }
   100% {
-      -moz-box-shadow: 0 0 0 0 rgba(103, 204, 44, 0);
+      -moz-box-shadow: 0 0 0 0 rgba(44, 113, 204, 0);
   }
 }
 
 @-o-keyframes pulse {
   0% {
-    -o-box-shadow: 0 0 0 0 rgba(103, 204, 44, 0.4);
+    -o-box-shadow: 0 0 0 0 rgba(44, 113, 204, 0.4);
   }
   70% {
-      -o-box-shadow: 0 0 0 10px rgba(103, 204, 44, 0);
+      -o-box-shadow: 0 0 0 10px rgba(44, 113, 204, 0);
   }
   100% {
-      -o-box-shadow: 0 0 0 0 rgba(103, 204, 44, 0);
+      -o-box-shadow: 0 0 0 0 rgba(44, 113, 204, 0);
   }
 }
 
@@ -1715,7 +1715,7 @@ section {
   border-bottom-right-radius: 200px;
   border-top-left-radius: 500px;
   border-top-right-radius: 500px;
-  border: #9AA086;
+  border: #00337C;
   border-width: 10px 10px 15px 10px;
   border-style: solid;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
@@ -1735,7 +1735,7 @@ section {
 }
 
 .btn-instagram {
-  background-color: #9AA086;
+  background-color: #00337C;
 }
 
 .btn-circle {
@@ -1751,7 +1751,7 @@ section {
 
 .hr-acara-pernikahan {
   width: 40%;
-  border: 0.5px solid #7b8752;
+  border: 0.5px solid #00337C;
   margin: 0 auto;
 }
 
@@ -1780,12 +1780,12 @@ section {
 }
 
 .btn-info {
-  background-color: #9AA086 !important;
-  border-color: #9AA086 !important;
+  background-color: #00337C !important;
+  border-color: #00337C !important;
 }
 
 .form-guest-book {
-  background-color: #9AA086;
+  background-color: #00337C;
   padding: 15px;
   border-radius: 10px;
 }
