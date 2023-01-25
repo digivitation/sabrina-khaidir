@@ -7,7 +7,7 @@
 
   <title>Wedding Party Sabrina & Khaidir</title>
   <meta content="Pernikahan Sabrina & Khaidir" name="description">
-  <meta content="assets/img/DCIM/icon-cover-imagejpg" property="og:image">
+  <meta content="./assets/img/DCIM/icon-cover-image.JPG" property="og:image">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -169,28 +169,6 @@
 
         <div class="row">
           <div class="col-lg-6 kasih-spasi">
-            <div class="col-md-12" data-aos="fade-left">
-              <div class="d-flex justify-content-center">
-                <img src="assets/img/DCIM/pengantin-pria.JPG" class="img-fluid foto-pasangan" alt="">
-              </div>
-              <h3 class="d-flex justify-content-center mt-2 nama-pasangan" id="groomName"></h3>
-              <span class="d-flex justify-content-center" id="groomFullName"></span>
-              <hr class="mt-3" style="max-width: 60%; margin: auto;">
-              <div class="row d-flex justify-content-center">
-                <div class="col-md-6">
-                  <span class="nama-orang-tua mt-1 d-flex justify-content-center"><strong>Putra Bungsu dari</strong></span>
-                  <span class="nama-orang-tua d-flex justify-content-center" id="groomFatherName"></span>
-                  <span class="nama-orang-tua d-flex justify-content-center">&</span>
-                  <span class="nama-orang-tua d-flex justify-content-center" id="groomMotherName"></span>
-                  <span class="nama-orang-tua d-flex justify-content-center"><strong id="groomBirthPlace"></strong></span>
-                  <span class="nama-orang-tua d-flex justify-content-center">
-                    <button class="btn btn-circle btn-instagram mt-1" id="btnGroomInstagram"><i class="bi bi-instagram"></i></button>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 kasih-spasi">
             <div class="col-md-12" data-aos="fade-right">
               <div class="d-flex justify-content-center">
                 <img src="assets/img/DCIM/pengantin-wanita.JPG" class="img-fluid foto-pasangan" alt="">
@@ -207,6 +185,28 @@
                   <span class="nama-orang-tua d-flex justify-content-center"><strong id="brideBirthPlace"></strong></span>
                   <span class="nama-orang-tua d-flex justify-content-center">
                     <button class="btn btn-circle btn-instagram mt-1" id="btnBrideInstagram"><i class="bi bi-instagram"></i></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 kasih-spasi">
+            <div class="col-md-12" data-aos="fade-left">
+              <div class="d-flex justify-content-center">
+                <img src="assets/img/DCIM/pengantin-pria.JPG" class="img-fluid foto-pasangan" alt="">
+              </div>
+              <h3 class="d-flex justify-content-center mt-2 nama-pasangan" id="groomName"></h3>
+              <span class="d-flex justify-content-center" id="groomFullName"></span>
+              <hr class="mt-3" style="max-width: 60%; margin: auto;">
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+                  <span class="nama-orang-tua mt-1 d-flex justify-content-center"><strong>Putra Bungsu dari</strong></span>
+                  <span class="nama-orang-tua d-flex justify-content-center" id="groomFatherName"></span>
+                  <span class="nama-orang-tua d-flex justify-content-center">&</span>
+                  <span class="nama-orang-tua d-flex justify-content-center" id="groomMotherName"></span>
+                  <span class="nama-orang-tua d-flex justify-content-center"><strong id="groomBirthPlace"></strong></span>
+                  <span class="nama-orang-tua d-flex justify-content-center">
+                    <button class="btn btn-circle btn-instagram mt-1" id="btnGroomInstagram"><i class="bi bi-instagram"></i></button>
                   </span>
                 </div>
               </div>
@@ -252,6 +252,21 @@
               <p class="lokasi-acara" id="lokasiSyukuran"></p>
               <div class="col-md-8 div-alamat-acara">
                 <p class="alamat-acara" id="alamatSyukuran"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6">
+              <div class="count-box resepsi">
+                <h2 class="mt-3" id="titleNgunduhMantu"></h2>
+                <div class="hr-acara-pernikahan justify-content-center"></div>
+                <p class="tanggal-acara" id="tanggalNgunduhMantu"></p>
+                <p class="waktu-acara" id="waktuNgunduhMantu"></p>
+                <p class="lokasi-acara" id="lokasiNgunduhMantu"></p>
+                <div class="col-md-8 div-alamat-acara">
+                  <p class="alamat-acara" id="alamatNgunduhMantu"></p>
+                </div>
               </div>
             </div>
           </div>
@@ -659,7 +674,7 @@
     let guestName = "Maaf Undangan tidak Tersedia Untuk Anda";
     let guestCategory = "";
     if (data != null) {
-      coupleName = `${data.groom_name} & ${data.bride_name}`;
+      coupleName = `${data.bride_name} & ${data.groom_name}`;
       guestName = data.guest_name;
       guestCategory = data.category;
     } else {
@@ -704,29 +719,36 @@
 
     // Wedding event information
     const akad = data.event_details.find(eventDetail => eventDetail.event_type == 'AKAD');
-    const syukuran = data.event_details.find(eventDetail => eventDetail.event_type == data.wedding_event_type);
-    let titleSyukuran = "Resepsi";
+    const syukuran = data.event_details.find(eventDetail => eventDetail.event_type == 'RESEPSI');
+    const ngunduhMantu = data.event_details.find(eventDetail => eventDetail.event_type == 'NGUNDUH_MANTU');
     let mapLocation = "https://maps.google.com/maps?q=Jl.%20mulawarman,%20perumahan,%20Jl.%20Borneo%20Paradiso%20No.55,%20Sepinggan,%20Kecamatan%20Balikpapan%20Selatan,%20Kota%20Balikpapan,%20Kalimantan%20Timur%2076115&t=&z=13&ie=UTF8&iwloc=&output=embed";
     var openTheMap = "https://www.google.com/maps/place/The+king+cafe+%26+resto/@-1.2477728,116.9249348,17z/data=!3m1!4b1!4m5!3m4!1s0x2df145bd17e0d297:0x66dda5ecf4001d6e!8m2!3d-1.2477984!4d116.9270878";
     if (data.wedding_event_type == 'NGUNDUH_MANTU') {
-      titleSyukuran = "Ngunduh Mantu";
       mapLocation = "https://maps.google.com/maps?q=Jl.%20Boulevard%20No.55,%20Pandang,%20Kec.%20Panakkukang,%20Kota%20Makassar,%20Sulawesi%20Selatan%2090222&t=&z=13&ie=UTF8&iwloc=&output=embed";
       openTheMap = "https://www.google.com/maps/place/Swiss-Belinn+Panakkukang+Makassar/@-5.1567063,119.4464114,17z/data=!3m1!4b1!4m8!3m7!1s0x2dbee2c17cd62a8d:0xd9282b88e86451f9!5m2!4m1!1i2!8m2!3d-5.1567063!4d119.4486001";
     }
     
     const tanggalAkad = moment(akad.event_date);
     const tanggalSyukuran = moment(syukuran.event_date);
+    const tanggalNgunduhMantu = moment(ngunduhMantu.event_date);
 
     $("#acaraTitle").html(`Acara ${tulisanPernikahan}`);
     $("#tanggalAkad").html(tanggalAkad.locale('id').format('dddd, DD MMMM YYYY'));
     $("#waktuAkad").html(`${tanggalAkad.locale('id').format('HH:mm')} WITA - Selesai`);
     $("#lokasiAkad").html(akad.location);
     $("#alamatAkad").html(akad.address);
-    $("#titleSyukuran").html(titleSyukuran);
+
+    $("#titleSyukuran").html("Resepsi");
     $("#tanggalSyukuran").html(tanggalSyukuran.locale('id').format('dddd, DD MMMM YYYY'));
     $("#waktuSyukuran").html(`${tanggalSyukuran.locale('id').format('HH:mm')} WITA - Selesai`);
     $("#lokasiSyukuran").html(syukuran.location);
     $("#alamatSyukuran").html(syukuran.address);
+
+    $("#titleNgunduhMantu").html("Ngunduh Mantu");
+    $("#tanggalNgunduhMantu").html(tanggalNgunduhMantu.locale('id').format('dddd, DD MMMM YYYY'));
+    $("#waktuNgunduhMantu").html(`${tanggalNgunduhMantu.locale('id').format('HH:mm')} WITA - Selesai`);
+    $("#lokasiNgunduhMantu").html(ngunduhMantu.location);
+    $("#alamatNgunduhMantu").html(ngunduhMantu.address);
 
     $("#gmap_canvas").attr('src', mapLocation);
     $('#bukaMap').click(function () {
