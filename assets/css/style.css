@@ -80,7 +80,7 @@ aAdd audio
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1C82AD;
+  background: #2b789d;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -123,7 +123,7 @@ aAdd audio
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #00337C;
+  border: 6px solid #3B4D65;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -460,7 +460,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #00337C;
+  background: #3B4D65;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -766,7 +766,7 @@ section {
   margin: 0;
   font-size: 45px;
   font-family: "monoline signature", sans-serif;
-  color: #00337C !important;
+  color: #3B4D65 !important;
 }
 
 .skills .count-box p {
@@ -791,7 +791,7 @@ section {
 # Amplop
 --------------------------------------------------------------*/
 .amplop {
-  background: #00337C;
+  background: #3B4D65;
   color: #fff;
 }
 
@@ -818,12 +818,12 @@ section {
 }
 
 .btn-confirm {
-  background-color: #1C82AD !important;
+  background-color: #2b789d !important;
   border-radius: 7.5px;
 }
 
 .btn-success {
-  border-color: #1C82AD !important;
+  border-color: #2b789d !important;
   border-radius: 50px;
 }
 
@@ -1392,7 +1392,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25) 0%,rgba(0, 0, 0, 0.25) 100%), url('../img/bg-footer.png');
+  background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.25) 0%,rgba(0, 0, 0, 0.25) 100%), url('../img/bg-footer.JPG');
   background-size: cover;
   color: #fff;
   font-size: 14px;
@@ -1466,7 +1466,7 @@ section {
   font-size: 50;
   font-weight: 500;
   line-height: 56px;
-  color: #8DCBE6!important;
+  color: #FFF!important;
   font-family: "monoline signature", Sans-serif;
 }
 
@@ -1640,7 +1640,7 @@ section {
 }
 
 .pulse {
-  background-color: #00337C!important;
+  background-color: #3C5C88!important;
   color: #ffffff;
   border: none;
   border-radius: 20px;
@@ -1652,7 +1652,7 @@ section {
   animation: pulse 2s infinite;
 }
 .pulse:hover {
-  background-color: #3f7856fc;
+  background-color: #5878a6;
   color: #ffffff;
   box-shadow: 0 0 0 rgba(44, 113, 204, 0.4);
   animation: pulse 2s linear infinite;
@@ -1715,7 +1715,7 @@ section {
   border-bottom-right-radius: 200px;
   border-top-left-radius: 500px;
   border-top-right-radius: 500px;
-  border: #00337C;
+  border: #3B4D65;
   border-width: 10px 10px 15px 10px;
   border-style: solid;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
@@ -1735,7 +1735,7 @@ section {
 }
 
 .btn-instagram {
-  background-color: #00337C;
+  background-color: #3B4D65;
 }
 
 .btn-circle {
@@ -1751,7 +1751,7 @@ section {
 
 .hr-acara-pernikahan {
   width: 40%;
-  border: 0.5px solid #00337C;
+  border: 0.5px solid #3B4D65;
   margin: 0 auto;
 }
 
@@ -1780,12 +1780,12 @@ section {
 }
 
 .btn-info {
-  background-color: #00337C !important;
-  border-color: #00337C !important;
+  background-color: #3B4D65 !important;
+  border-color: #3B4D65 !important;
 }
 
 .form-guest-book {
-  background-color: #00337C;
+  background-color: #3B4D65;
   padding: 15px;
   border-radius: 10px;
 }
